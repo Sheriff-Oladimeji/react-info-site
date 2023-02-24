@@ -1,15 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import pic from "./profile.png";
+
 const app = document.getElementById("root");
-// const page = (
-//   <div>
-//     <h1 className="header">React Intro</h1>
-//     <p>Learning react fundamentals</p>
-//   </div>
-// )
+
 const page = (
   <div>
-    <img src="./profile.png" alt="profile"></img>
+    <img src={pic} alt="" width={"40px"} />
     <h1>Fun facts about React</h1>
     <ul>
       <li>Was first released in 2013</li>
