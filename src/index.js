@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import pic from "./profile.png";
+import pic from "./logo.svg";
 
 const app = document.getElementById("root");
 
