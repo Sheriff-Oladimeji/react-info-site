@@ -4,18 +4,24 @@ import pic from "./logo.svg";
 
 const app = document.getElementById("root");
 
-const page = (
-  <div>
-    <img src={pic} alt="" width={"40px"} />
-    <h1>Fun facts about React</h1>
-    <ul>
-      <li>Was first released in 2013</li>
-      <li>Was originally created by Jordan Walke</li>
-      <li>Has well over 100k stars on Github</li>
-      <li>Is maintained by Facebook</li>
-      <li>Powers thousands of enterprise apps, including mobile apps</li>
-    </ul>
-  </div>
-);
+function Page() {
+  return (
+    <div>
+      <header>
+        <nav>
+          <img src={pic} width={"40px"} alt="logo" />
+        </nav>
+      </header>
+      <h1>Reasons I'm exicted to learn React</h1>
+      <ol>
+        <li>It's a popular library</li>
+        <li>It's easy to learn for beginners</li>
+      </ol>
+      <footer>
+        <small>&copy; 2023 Sheriff development. All rights reserved</small>
+      </footer>
+    </div>
+  );
+}
+ReactDOM.render(<Page/>, app)
 
-ReactDOM.render(page, app);
