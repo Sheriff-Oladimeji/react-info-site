@@ -1,23 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import pic from "./logo.svg";
+
 
 const app = document.getElementById("root");
-function Header() {
-return(
-  <header>
-        <nav className="nav">
-          <img src={pic}  alt="logo" className="logo"/>
-          <ul className="nav-items">
-            <li>Pricing</li>
-            <li>About</li>
-            <li>Contact</li>
-          </ul>
-        </nav>
-      </header>
-)
 
-}
 function MainContent(){
   return(
 <div>
@@ -31,7 +17,7 @@ function MainContent(){
 }
 function Footer(){
   return (
-    <footer>
+    <footer className="footer">
         <small>&copy; 2023 Sheriff development. All rights reserved</small>
       </footer>
   )
@@ -39,7 +25,6 @@ function Footer(){
 function Page() {
   return (
     <div>
-   <Header/>
      <MainContent/>
      <Footer/> 
     </div>
