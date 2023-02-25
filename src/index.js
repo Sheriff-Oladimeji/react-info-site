@@ -1,25 +1,47 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import pic from "./logo.svg";
-import css from "./style.css"
-const app = document.getElementById("root");
 
-function Page() {
-  return (
-    <div>
-      <header>
-        <nav>
+const app = document.getElementById("root");
+function Header() {
+return(
+  <header>
+        <nav className="nav">
           <img src={pic} width={"40px"} alt="logo" />
+          <ul className="nav-items">
+            <li>Pricing</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
         </nav>
       </header>
-      <h1>Reasons I'm exicted to learn React</h1>
+)
+
+}
+function MainContent(){
+  return(
+<div>
+<h1>Reasons I'm exicted to learn React</h1>
       <ol>
         <li>It's a popular library</li>
         <li>It's easy to learn for beginners</li>
       </ol>
-      <footer>
+</div>
+  )
+}
+function Footer(){
+  return (
+    <footer>
         <small>&copy; 2023 Sheriff development. All rights reserved</small>
       </footer>
+  )
+}
+function Page() {
+  return (
+    <div>
+   <Header/>
+     <MainContent/>
+     <Footer/> 
     </div>
   );
 }
