@@ -1,9 +1,10 @@
 import React  from "react"
+import logo from "./logo.svg"
 export default  function Header() {
   return(
     <header>
           <nav className="nav">
-            <img src="./logo.svg"  alt="logo" className="logo"/>
+            <img src={logo}  alt="logo" className="logo"/>
             <ul className="nav-items">
               <li>Pricing</li>
               <li>About</li>

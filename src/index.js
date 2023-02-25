@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
+import Header from "./Header";
 
 const app = document.getElementById("root");
 
@@ -25,6 +25,7 @@ function Footer(){
 function Page() {
   return (
     <div>
+      <Header/>
      <MainContent/>
      <Footer/> 
     </div>
