@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import pic from "./logo.svg";
-
+import css from "./style.css"
 const app = document.getElementById("root");
 
 function Page() {
